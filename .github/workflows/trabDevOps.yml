@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      EMAIL_LIST: vitorandre26@gmail.com, alinepmarc@gmail.com
+      EMAIL_LIST: vitorandre26@gmail.com
 
     steps:
     - name: Executa comandos
