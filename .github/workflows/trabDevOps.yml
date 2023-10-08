@@ -31,6 +31,12 @@ jobs:
       - name: Run Karate Tests
         run: mvn test -Dtest=trabalhoRunner
 
+      - name: Upload de artefatos
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio-teste
+          path: target/karate-reports/aula_inatel.trabalho2.trabalhoDevOps.html
+
   empacotar:
 
     needs: test
@@ -50,8 +56,8 @@ jobs:
       - name: Upload de artefatos
         uses: actions/upload-artifact@v3
         with:
-          name: relatorio-testes
-          path: target/karate-reports/aula_inatel.trabalho2.trabalhoDevOps.html
+          name: pacote-jar
+          path: target/*.jar
 
   notificacao:
     runs-on: ubuntu-latest
