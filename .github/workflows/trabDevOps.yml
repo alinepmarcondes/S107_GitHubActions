@@ -31,15 +31,6 @@ jobs:
       - name: Run Karate Tests
         run: mvn test -Dtest=trabalhoRunner
 
-      - name: Upload de artefatos
-
-        uses: actions/upload-artifact@v3
-
-        with:
-          name: relatorio-testes
-
-          path: target\karate-reports\aula_inatel.trabalho2.trabalhoDevOps.html
-
   empacotar:
 
     needs: test
@@ -55,3 +46,9 @@ jobs:
           cache: maven
       - name: Build com Maven
         run: mvn clean install
+
+      - name: Upload de artefatos
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio-testes
+          path: target\karate-reports\aula_inatel.trabalho2.trabalhoDevOps.html
