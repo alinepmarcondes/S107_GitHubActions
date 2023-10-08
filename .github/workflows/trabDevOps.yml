@@ -39,3 +39,19 @@ jobs:
           name: relatorio-testes
 
           path: target\karate-reports\aula_inatel.trabalho2.trabalhoDevOps.html
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Java Maven
+        uses: actions/setup-node@v3
+        with:
+          java-version: "17"
+          distribution: "temurin"
+          cache: maven
+
+      - name: Build Java Code
+        run: mvn clean install 
