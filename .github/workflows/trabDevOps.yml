@@ -1,4 +1,4 @@
-name: Karate Tests and JavaScript Build
+name: Karate Tests
 
 on:
   push:
