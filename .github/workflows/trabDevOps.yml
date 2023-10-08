@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: "17"
-          distribution: 'temurin'
+          distribution: "temurin"
           cache: maven
 
       - name: Install Node.js
@@ -36,7 +36,6 @@ jobs:
         uses: actions/upload-artifact@v3
 
         with:
-
           name: relatorio-testes
 
-          path: target\karate-reports\aula_inatel.trabalho2.trabalho2.html
+          path: target\karate-reports\aula_inatel.trabalho2.trabalhoDevOps.html
