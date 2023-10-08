@@ -52,3 +52,14 @@ jobs:
         with:
           name: relatorio-testes
           path: target\karate-reports\aula_inatel.trabalho2.trabalhoDevOps.html
+
+  notificacao:
+    runs-on: ubuntu-latest
+
+    env:
+      EMAIL_LIST: vitorandre26@gmail.com, alinepmarc@gmail.com
+
+    steps:
+    - name: Executa comandos
+      uses: actions/checkout@v3
+    - run: sh scripts/shell.sh
