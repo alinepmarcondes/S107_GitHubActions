@@ -39,4 +39,4 @@ jobs:
 
           name: relatorio-testes
 
-          path: S107_GitHubActions\target\karate-reports\aula_inatel.trabalho2.trabalho2.html
+          path: target\karate-reports\aula_inatel.trabalho2.trabalho2.html
