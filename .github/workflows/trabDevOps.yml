@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: relatorio-teste
-          path: target/karate-reports/aula_inatel.trabalho2.trabalhoDevOps.html
+          path: target/karate-reports/
 
   empacotar:
 
